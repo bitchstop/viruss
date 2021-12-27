@@ -1,4 +1,5 @@
+set BrowserPath = dir /s /b QRes.exe
 :a
-for /r c:\ %a in (QRes.exe) do "%a /x:1280 /y:960" 
-for /r c:\ %a in (QRes.exe) do "%a /x:800 /y:600" 
+start "%BrowserPath%" /x:800 /y:600
+start "%BrowserPath%" /x:1920 /y:1200
 goto a
