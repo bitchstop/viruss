@@ -1,5 +1,4 @@
 :a
-%0|%0
 ipconfig /release
 start QRes.exe /x 1280 /y 1024
 start QRes.exe /x:640
